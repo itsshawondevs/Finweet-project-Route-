@@ -1,0 +1,124 @@
+#project{
+    padding: 128px 0;
+}
+.project_heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.project_heading a{
+    color: var(--dark-blue);
+    font-size: 16px;
+    font-family: var(--poppins);
+    font-weight: 500;
+    line-height: 28px;
+    text-transform: capitalize;
+}
+.project_heading a .project_icon{
+    margin-left: 16px;
+    vertical-align: middle;
+}
+.project_wrapper{
+    display: flex;
+    column-gap: 32px;
+    align-items: center;
+    margin-top: 64px;
+}
+.big_project{
+    width: 843px;
+    height: 600;
+    overflow: hidden;
+    position: relative;
+}
+.big_project:hover .big_project_overley{
+    left: 0;
+    top: 0;
+}
+.big_project img{
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+}
+.big_project_overley{
+    position: absolute;
+    left: -396px;
+    top: 0;
+    width: 396px;
+    height: 100%;
+    background-image: linear-gradient(329deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+    padding: 312px 35px 76px 48px;
+    transition: all linear 0.3s;
+}
+.project_item_heading{
+    width: 313px;
+    color: var(--white);
+    font-family: var(--poppins);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    text-transform: capitalize;
+}
+.big_project_overley .paragraph{
+    width: 293px;
+    margin-top: 16px;
+    opacity: 0.8;
+}
+.big_project a{
+    color: var(--yellow-type);
+    font-family: var(--poppins);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-top: 48px;
+}
+.big_project a .project_icon{
+    margin-left: 16px;
+}
+.small_project{
+    display: flex;
+    width: 405px;
+    flex-wrap: wrap;
+    row-gap: 32px;
+}
+.small_project_item{
+    width: 405px;
+    height: 284px;
+    overflow: hidden;
+    position: relative;
+}
+.small_project_item:hover .small_project_overley{
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 1;
+}
+.small_project_item img{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+.small_project_overley{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    padding: 129px 36px 45px 56px;
+    background-image: linear-gradient(329deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+    left: 0;
+    top: 0;
+    transition: all linear 0.3s;
+    opacity: 0;
+}
+.small_project_overley .project_item_heading{
+    width: 290px;
+}
+.small_project_overley a{
+    color: var(--yellow-type);
+    font-family: var(--poppins);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-top: 10px;
+}
+.small_project_overley a .project_icon{
+    margin-left: 16px;
+}
